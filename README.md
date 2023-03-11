@@ -1,9 +1,9 @@
 # kajabi-cloudflare-firewall-rules
 Cloudflare Firewall rules for Kajabi custom domains for added protection and prevention of excessive 404 responses.
 ```clojure
-(http.host eq "www.jasongo.net")
+(http.host eq "YOUR_CUSTOM_DOMAIN_HERE")
 and (
-    (http.request.uri.path contains "jasongo.net") or
+    (http.request.uri.path contains "YOUR_ROOT_CUSTOM_DOMAIN_HERE") or
     (http.request.uri.path contains ".asp") or
     (http.request.uri.path contains ".axd") or
     (http.request.uri.path contains ".dll") or
